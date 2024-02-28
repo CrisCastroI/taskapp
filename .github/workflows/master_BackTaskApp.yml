@@ -29,7 +29,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_704b997558b14a43abf8573cf25cc773 }}/criscastroi/taskapp:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_704b997558b14a43abf8573cf25cc773 }}/taskapp:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
