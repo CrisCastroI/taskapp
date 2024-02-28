@@ -47,4 +47,4 @@ jobs:
         app-name: 'BackTaskApp'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_40971ce730414ec7bca3171b205de41b }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_704b997558b14a43abf8573cf25cc773 }}/criscastroi/taskapp:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_704b997558b14a43abf8573cf25cc773 }}/taskapp:${{ github.sha }}'
